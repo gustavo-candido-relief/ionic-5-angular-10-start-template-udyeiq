@@ -1,0 +1,10 @@
+<ion-content>
+  <ion-item selectSearchAllDirective>
+    <ion-label>SelectAllDirective</ion-label>
+    <ion-select [(ngModel)]="selectedValues" multiple="true">
+      <ion-select-option [value]="option" *ngFor="let option of  items"
+        >{{option}}
+      </ion-select-option>
+    </ion-select>
+  </ion-item>
+</ion-content>
